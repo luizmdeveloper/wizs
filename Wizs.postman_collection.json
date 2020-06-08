@@ -1,0 +1,192 @@
+{
+	"info": {
+		"_postman_id": "731dd46e-1132-4203-9136-0c9d2c0c7ea4",
+		"name": "Wizs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "customer",
+			"item": [
+				{
+					"name": "find all",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Renata Tahyna\",\n\t\"documentNumber\": \"43808398000\",\n\t\"birthDate\": \"1989-02-28\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{wizs-api}}/customers?page=0&size=10",
+							"host": [
+								"{{wizs-api}}"
+							],
+							"path": [
+								"customers"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find by id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Renata Tahyna\",\n\t\"documentNumber\": \"43808398000\",\n\t\"birthDate\": \"1989-02-28\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{wizs-api}}/customers/1",
+							"host": [
+								"{{wizs-api}}"
+							],
+							"path": [
+								"customers",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "save",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Renata Tahyna\",\n\t\"documentNumber\": \"43808398000\",\n\t\"birthDate\": \"1989-02-28\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{wizs-api}}/customers",
+							"host": [
+								"{{wizs-api}}"
+							],
+							"path": [
+								"customers"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 7,\n    \"name\": \"Renata Tahyna Sampaio\",\n    \"documentNumber\": \"43808398000\",\n    \"birthDate\": \"1989-02-28\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{wizs-api}}/customers/7",
+							"host": [
+								"{{wizs-api}}"
+							],
+							"path": [
+								"customers",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update [patch]",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Renata Tahyna\",\n\t\"documentNumber\": \"43808398000\",\n\t\"birthDate\": \"1989-02-28\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{wizs-api}}/customers/7",
+							"host": [
+								"{{wizs-api}}"
+							],
+							"path": [
+								"customers",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"Renata Tahyna Sampaio\",\n\t\"documentNumber\": \"43808398000\",\n\t\"birthDate\": \"1989-02-28\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{wizs-api}}/customers/6",
+							"host": [
+								"{{wizs-api}}"
+							],
+							"path": [
+								"customers",
+								"6"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
