@@ -11,7 +11,7 @@ docker-compose -f src/main/docker/mysql.yml up -d
 ```
 
 ## Importação postman
-Com intuito de melhoria no teste realizae a importação de dois arquivos encontrados na raiz do projeto. São eles
+Com intuito de melhoria no teste realize a importação de dois arquivos, no postman, encontrados na raiz do projeto. São eles
 ```bash
 Wizs.postman_collection
 wizs-api.postman_environment
